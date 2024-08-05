@@ -1,0 +1,12 @@
+body {
+  background-color: #333;
+}
+.nav-bar {
+  word-spacing: 100px;
+  padding: 10px;
+  text-align: center;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
