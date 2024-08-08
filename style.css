@@ -1,12 +1,60 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
 body {
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
+}
+.logo {
+  display: flex;
+  position: fixed;
+  margin-left: 50px;
+}
+.img-logo{
+  width: 50px;
+  height: 40px;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.header {
+  background-color:#24252A;
+  padding: 10px;
 }
 .nav-bar {
   word-spacing: 100px;
   padding: 10px;
-  text-align: center;
+  margin-right: 250px;
+  text-align: right;
 }
 .nav-bar a {
-  color: white;
+  color: rgb(255, 255, 255)  ;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.nav-bar a:hover{
+  color: rgb(5, 238, 238);
+}
+.nav-menu-btn{
+  color: rgb(255, 255, 255);
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .logo{
+    margin-left: 20px;
+  }
+  .nav-menu-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: right;
+  }
+  .nav-bar a{
+    display: none;
+  }
+  .nav-bar{
+    margin-right: 0px;
+  }
 }
