@@ -11,36 +11,35 @@
     />
   </head>
   <body>
-    <div class="header">
+    <div class="nav-bar" id="nav-menu">
       <div class="logo">
         <img class="img-logo" src="resources/logo.png" alt="logo" />
       </div>
-      <div class="nav-bar">
-        <ul>
-          <a href="">Home</a>
-          <a href="">Skills</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
-        </ul>
-        <div class="nav-menu-btn" onclick="myMenuFunction()">
-          <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
-              d="M5 7h14M5 12h14M5 17h14"
-            />
-          </svg>
-        </div>
+      <ul class = "nav-links" id = "navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-menu-btn" id = "menu-btn" onclick="myMenuFunction()">
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M5 7h14M5 12h14M5 17h14"
+          />
+        </svg>
       </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
