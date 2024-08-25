@@ -2,8 +2,11 @@
   margin: 0%;
   padding: 0%;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #2a2b30;
 }
 .logo {
   margin-left: 30px;
@@ -18,6 +21,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #24252a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 .nav-links {
   list-style: none;
@@ -35,9 +43,34 @@ body {
 }
 .nav-links a:hover {
   color: rgb(5, 238, 238);
+  outline: none;
 }
 .nav-menu-btn {
   display: none;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 80vh;
+  padding: 70px 50px 0 50px;
+}
+.my-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container2 {
+  height: 100vh;
+  padding: 70px 50px 0 50px;
+  color: aliceblue;
+}
+p {
+  color: white;
+}
+h1 {
+  color: rgb(5, 238, 238);
 }
 @media (max-width: 768px) {
   .nav-links {
@@ -46,10 +79,11 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 50px;
+    /* height: calc(100vh - 60px); Full height minus the navbar height */
+    position: fixed; /* Keep it fixed with the navbar */
+    top: 60px;
     left: 0;
     background-color: #24252a;
-    padding: 10px 0;
   }
 
   .nav-links.active {
@@ -58,7 +92,8 @@ body {
     align-items: center;
   }
 
-  .nav-links li {padding: 50px;
+  .nav-links li {
+    padding: 50px;
     text-align: center;
   }
 
