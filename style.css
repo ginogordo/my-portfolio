@@ -76,6 +76,25 @@ body {
 .image{
   filter: drop-shadow(1px 1px 20px  rgb(5, 238, 238));
 }
+.social-links a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: .2rem solid  rgb(5, 238, 238);
+  border-radius: 50%;
+  font-size: 1rem;
+  color:  rgb(5, 238, 238);
+  margin: 1rem 1rem 1.5rem 0;
+  transition: .5s ease;
+}
+.social-links a:hover{
+  background:  rgb(5, 238, 238);
+  color: #24252a;
+  box-shadow: 0 0 1rem  rgb(5, 238, 238);
+}
 @media (max-width: 768px) {
   .nav-links {
     display: none;
