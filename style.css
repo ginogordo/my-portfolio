@@ -139,14 +139,15 @@ body {
   box-shadow: 0 0 1rem rgb(5, 238, 238);
 } */
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0px;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    position: absolute;
-    /* height: calc(100vh - 60px); Full height minus the navbar height */
-    position: fixed; /* Keep it fixed with the navbar */
+    position: fixed;
     top: 60px;
     left: 0;
     background-color: #24252a;
@@ -164,7 +165,7 @@ body {
   }
 
   .nav-menu-btn {
-    margin-right: 20px;
+    margin-right: 30px;
     color: white;
     display: flex;
   }
